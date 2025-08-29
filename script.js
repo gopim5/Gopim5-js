@@ -25,7 +25,14 @@
 
     }
     
-    
+     document.getElementById('FD_calc').addEventListener("keydown", function(event){
+
+        if (event.key === 'Enter'){
+
+            FD_calc()
+
+        }
+    } );
     
     function FD_calc(){
 
@@ -50,7 +57,7 @@
 let total_income= (((FD_amount * rate)/12)*Tenure_months) + FD_amount;
 
 
-        document.getElementById("amount").innerText="Total return is Rs. " + total_income.toFixed(2)
+        document.getElementById("amount").innerText="Total return is Rs. " + total_income.toFixed(0)
 
     }
 
@@ -76,6 +83,7 @@ document.getElementById('input_value').addEventListener('mouseover', function(){
     const know_btn = document.querySelector('.know_btn');
 
 
+    know_btn.addEventListener('focus', display_states);
     know_btn.addEventListener('mouseover', display_states);
 
 
@@ -118,3 +126,4 @@ document.getElementById('input_value').addEventListener('mouseover', function(){
 
 
     }
+
