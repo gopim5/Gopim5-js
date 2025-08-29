@@ -3,7 +3,7 @@ body{
             margin: 0;
             height: 100vh;
             /* background-color: rgb(253, 237, 174); */
-            background: linear-gradient(to bottom, rgb(158, 239, 255) 20%, rgba(158, 239, 255, 0.1) 50% ), url('/Practice/Email/Test/AdobeStock_911542157.jpeg');
+            background: linear-gradient(to bottom, rgb(158, 239, 255) 20%, rgba(158, 239, 255, 0.1) 50% ), url('/Bg_img.jpeg');
             font-family: sans-serif;
             background-position: center;
             background-repeat: no-repeat;
@@ -111,4 +111,5 @@ body{
                 color: aliceblue;
                 text-align: center;
             }
+
 }
