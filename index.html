@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="script.js"> -->
+
+    
+</head>
+<body>
+
+    <div class="switch">
+       <a href="#"> <div class="switch_box"  onclick="PTconverter()">PX - PT Converter</div></a>
+       <a href="#"> <div class="switch_box" onclick="Fixed_Deposit()">FD Return calculator</div></a>
+        <a href="#"><div class="switch_box" onclick="coding_languages()">Coding languages</div></a>
+    </div>
+    
+    <div id="PTconverter" class="Bg_shape displayNone">
+
+            <p>PX to PT Converter</p>
+
+            <div class="input_box">
+                <input id="input_value" type="text" name="input_box" placeholder="Enter a (PX) value">
+            </div>
+
+            <div class="click_button">
+                <button class="click_btn" type="button" id="conv_but" onclick="converter_pt()"> Convert</button>
+            </div>
+
+            <div id="Answer"></div>
+            
+
+    </div>
+
+    <div id="Fixed_Deposit" class="Bg_shape">
+
+            <p>Fixed Deposit return calculator</p>
+            <p style="color: rgb(183, 183, 183); font-size: 12px;">
+                3 months 5.8%, 3 - 6 months - 6.5%, 7 - 9 months - 7%, More than 9 months - 7.5%
+            </p>
+
+            <div class="input_box">
+                <input id="FD_amount" type="number" name="input_box" placeholder="Enter FD-amount(ex:100000)" required>
+            </div>
+
+            <div class="input_box">
+                <input id="Tenure_months" type="number" name="input_box" placeholder="Tenure months(ex:3)" required>
+            </div>
+
+            <div class="click_button">
+                <button class="click_btn" type="button" id="FD_calc" onclick="FD_calc()">Calculate</button>
+            </div>
+
+            <div id="amount"></div>
+            
+
+    </div>
+
+
+    <div id="Coding_language" class="Bg_shape displayNone">
+
+        <p>Know about Coding language</p>
+
+            <div class="input_box">         
+            
+                   <select name="languages" id="languages_value">
+                        <option value="" disabled selected>--Click to Select--</option>
+                        <option value="Html">Html</option>
+                        <option value="CSS">CSS</option>
+                        <option value="JavaScript">JavaScript</option>
+                        <option value="Python">Python</option>
+                   </select>
+             
+            </div>
+
+            <div class="click_button">
+                <button class="click_btn know_btn" type="button" id="know_btn" onclick="">Click to Know</button>
+            </div>
+
+            <div id="states_text"></div>
+            
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>

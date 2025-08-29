@@ -1,0 +1,114 @@
+body{
+
+            margin: 0;
+            height: 100vh;
+            /* background-color: rgb(253, 237, 174); */
+            background: linear-gradient(to bottom, rgb(158, 239, 255) 20%, rgba(158, 239, 255, 0.1) 50% ), url('/Practice/Email/Test/AdobeStock_911542157.jpeg');
+            font-family: sans-serif;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size:cover;
+
+        
+        }
+
+        a{
+
+            text-decoration: none;
+        }
+
+        .switch{
+
+            display: flex;
+            flex-wrap: wrap;
+            
+            justify-content: center;
+            gap:20px;
+            padding: 50px 20px;
+        }
+
+
+
+        .switch_box{
+
+                background-color: black;
+                width: fit-content;
+                color: aliceblue;
+                padding: 12px 24px;
+                border-radius: 12px;
+                
+        }
+
+        .displayNone{
+
+            display: none;
+        }
+
+
+        .Bg_shape{
+
+            width: 400px;
+            /* width: 100%; */
+            height: fit-content;
+            background-color: rgb(26, 26, 26);
+            border-radius: 20px;
+            margin:0px auto;    
+            padding: 30px;
+          
+
+            p{
+                color:  rgb(255, 244, 202);
+                text-align: center;
+               
+            }
+
+            .input_box {
+                
+                display: flex;
+                justify-content: center;
+               
+                
+                input{
+                width: 100%;
+                border-radius: 6px;
+                border: none;
+                padding: 12px;
+                margin-top: 12px;
+            
+                }
+
+                select{
+
+                   width: 60%;
+                   height: 40px;
+                   font-size: 18px;
+                    text-align: center;
+
+                  
+                }
+                
+                
+            }
+
+            .click_button{
+
+               text-align: center;
+               padding: 24px 0 24px;
+
+               .click_btn{
+
+                border: none;
+                border-radius:6px;
+                width: 40%;
+                height: 30px;
+                background-color: blanchedalmond;
+               }
+            }
+
+            #Answer, #amount, #states_text{
+
+                /* padding: 24px ; */
+                color: aliceblue;
+                text-align: center;
+            }
+}
