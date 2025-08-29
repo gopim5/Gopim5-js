@@ -76,7 +76,7 @@ document.getElementById('input_value').addEventListener('mouseover', function(){
     const know_btn = document.querySelector('.know_btn');
 
 
-    know_btn.addEventListener('click', display_states);
+    know_btn.addEventListener('mouseover', display_states);
 
 
 
@@ -115,5 +115,6 @@ document.getElementById('input_value').addEventListener('mouseover', function(){
         }
 
         document.getElementById('states_text').innerHTML = text;
+
 
     }
